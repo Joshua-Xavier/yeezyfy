@@ -6,6 +6,11 @@ import sys, os, random, argparse
 from PIL import Image
 import imghdr
 import numpy as np
+from lib.getAverageRGB import *
+from lib.getImages import *
+from lib.gridSplit import *
+from lib.colourMatch import *
+from lib.createGrid import *
 
 def createMosaic(target_image, input_images, grid_size, reuse_images=True):
 
@@ -26,7 +31,7 @@ def createMosaic(target_image, input_images, grid_size, reuse_images=True):
         match_index = colourMatch(avg, avgs)
         output_images.append(input_images[match_index])
         if count > 0 and batch_size > 10 and count % batch_size is 0:
-            print("Processed %d of %d..."(count, len(target_images)))
+            print("Processed %d of %d..." %(count, len(target_images)))
         count += 1
         if not reuse_images:
             input_images.remove(match_index)

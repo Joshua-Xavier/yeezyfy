@@ -2,13 +2,8 @@ import sys, os, random, argparse
 from PIL import Image
 import imghdr
 import numpy as np
+from lib.createMosaic import *
 
-import colourMatch
-import createGrid
-import createMosaic
-import getAverageRGB
-import getImages
-import gridSplit
 
 
 def main():
@@ -78,8 +73,7 @@ def main():
       img.thumbnail(dims)
 
   # create photomosaic
-  mosaic_image = createMosaic(target_image, input_images, grid_size,
-                                   reuse_images)
+  mosaic_image = createMosaic(target_image, input_images, grid_size, reuse_images)
 
   # write out mosaic
   mosaic_image.save(output_filename, 'PNG')
@@ -90,3 +84,4 @@ def main():
 # Standard boilerplate to call the main() function to begin
 # the program.
 if __name__ == '__main__':
+    main()
