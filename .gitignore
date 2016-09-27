@@ -83,6 +83,7 @@ venv/
 ENV/
 
 .DS_Store
+imageBank
 
 # Spyder project settings
 .spyderproject
