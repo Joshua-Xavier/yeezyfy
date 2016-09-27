@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @Joshua-Xavier
- Watch 1,813
-  Star 41,325
- Fork 16,390 github/gitignore
- Code  Pull requests 168  Projects 0  Pulse  Graphs
-Branch: master Find file Copy pathgitignore/Python.gitignore
-1c652a2  on Aug 14
-@Shir0kamii Shir0kamii Add hidden virtualenv to Python template
-49 contributors @arcresu @Metallicow @svkampen @shiftkey @toanant @misaelnieto @EvandroLG @Harrison-G @vltr @hugovk @Lucretiel @matheussl @hippo91 @manavm @rayshan @llonchj @kdeldycke @jspahrsummers @honzajavorek @reinout @roll @relekang @geogdog @gsnedders @xiaogaozi @adamv and others
-RawBlameHistory
-91 lines (72 sloc)  1.03 KB
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -98,6 +81,8 @@ celerybeat-schedule
 .venv/
 venv/
 ENV/
+
+.DS_Store
 
 # Spyder project settings
 .spyderproject
