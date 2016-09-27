@@ -2,6 +2,10 @@
 AUTHOR: Josh Nelsson-Smith
 DESCRIPTION:
 """
+import sys, os, random, argparse
+from PIL import Image
+import imghdr
+import numpy as np
 
 def getAverageRGB(img):
 

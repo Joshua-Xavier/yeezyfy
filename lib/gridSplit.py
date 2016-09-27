@@ -3,6 +3,10 @@ AUTHOR: Josh Nelsson-Smith
 DESCRIPTION: This takes an image and a size and
 splits the image into the given size of images
 """
+import sys, os, random, argparse
+from PIL import Image
+import imghdr
+import numpy as np
 
 def gridSplit(image, size):
 
