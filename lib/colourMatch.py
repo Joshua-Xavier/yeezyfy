@@ -10,9 +10,9 @@ def colourMatch(rgb_avg, avrgs):
     min_distance = float("inf")
 
     for current_avg in avrgs:
-        r_dist = (current_avg[0] - rgb_avg[0])^2
-        g_dist = (current_avg[1] - rgb_avg[1])^2
-        b_dist = (current_avg[2] - rgb_avg[2])^2
+        r_dist = (current_avg[0] - rgb_avg[0])**2
+        g_dist = (current_avg[1] - rgb_avg[1])**2
+        b_dist = (current_avg[2] - rgb_avg[2])**2
 
         distance = r_dist + g_dist + b_dist
 
